@@ -1,0 +1,131 @@
+/* #FF4E88 */
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: 600;
+  color: #ff4e88;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.cards {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f5f6;
+  width: 100%;
+  height: 100px;
+  border: 3px solid #ff4e88;
+  margin-top: 20px;
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+.card.expanded {
+  height: 300px;
+}
+
+.card-bottom {
+  display: none;
+}
+
+.card.expanded .card-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+select {
+  padding: 10px 20px;
+}
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+}
+
+table tr {
+  align-items: center;
+}
+
+table th,
+table td {
+  text-align: center;
+  padding: 10px;
+}
+
+table td {
+  vertical-align: middle;
+}
+
+.card-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-input {
+  margin-right: 20px;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.card-details-left {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.discount {
+  display: flex;
+  width: 100%;
+}
+
+.discount p {
+  background-color: #ff4e88;
+  color: whitesmoke;
+  margin-left: 4%;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.total-price-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.addToCart {
+  display: flex;
+  width: 100%;
+}
+
+.addToCart button {
+  font-weight: 600;
+  background-color: #ff4e88;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
